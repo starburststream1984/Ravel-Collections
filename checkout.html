@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ravel Collections | Checkout</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <script>
+function showAlert() {
+    Swal.fire({
+        title: 'Berhasil!',
+        text: 'Pesanan Berhasil Dibuat.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+}
+</script>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" style="width: 100px;" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Beranda</a></li>
+                            <li class="active"><a href="./shop.html">Belanja</a></li>
+                            <li><a href="#">Halaman</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.html">Tentang Kami</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Kontak</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                        <a href="shopping-cart.html"><i class="fa-solid fa-cart-flatbed" style="color: rgb(1, 0, 0);"></i></a>
+                        <a href="checkout.html"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                        <div class="price">Rp 0.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Check Out</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Beranda</a>
+                            <a href="./shop.html">Belanja</a>
+                            <span>Check Out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="checkout__form">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h6 class="checkout__title">Detail Tagihan</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Nama Pertama<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Nama Terakhir<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Negara<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Alamat<span>*</span></p>
+                                <input type="text" placeholder="Alamat Jalan" class="checkout__input__add">
+                                <input type="text" placeholder="Apartment, suite, unit dan lainnya (optional)">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Kota<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Negara<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Kode Pos<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Telepon<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="acc">
+                                    Membuat Akun?
+                                    <input type="checkbox" id="acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>Buat akun baru dengan mengisi data di bawah. Bagi pelanggan setia, silakan masuk (login) melalui menu di bagian atas halaman</p>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Password Akun<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="diff-acc">
+                                    Catatan tentang pesanan Anda, misalnya: catatan khusus untuk pengiriman.
+                                    <input type="checkbox" id="diff-acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Catatan Pesanan<span>*</span></p>
+                                <input type="text"
+                                placeholder="Catatan tentang pesanan Anda, misalnya: catatan khusus untuk pengiriman.">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4 class="order__title">Pesanan Kamu</h4>
+                                <div class="checkout__order__products">Produk <span>Total</span></div><br>
+                                <ul class="checkout__total__products">
+                                    <li>01. Jacket Trucker Pria <span>Rp 220.000</span></li>
+                                    <li>02. Tragen Sneakers <br> Pria Casual <span>Rp 259.000</span></li>
+                                    <li>03. Basic Flowing Scarf <span>Rp 310.000</span></li>
+                                    <li>04. Mochila Zara Man <br> Minimal marron <span>Rp 430.000</span></li>
+                                </ul>
+                                <ul class="checkout__total__all">
+                                    <li>Subtotal <span>Rp 1.219.000</span></li>
+                                    <li>Total <span>Rp 1.219.000</span></li>
+                                </ul>
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        Membuat Akun?
+                                        <input type="checkbox" id="acc-or">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p>Dengan membuat akun, Anda dapat menyimpan alamat pengiriman, melihat riwayat pesanan, dan menikmati promo khusus untuk member setia kami.</p>
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment">
+                                        Cek Pembayaran
+                                        <input type="checkbox" id="payment">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="paypal">
+                                        Paypal
+                                        <input type="checkbox" id="paypal">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button type="submit" onclick="showAlert()" class="site-btn">LETAKKAN PESANAN</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/footer-logo.png" style="width: 90px;" alt=""></a>
+                        </div>
+                        <p>Pelanggan adalah jantung dari model bisnis kami yang unik, di mana desain pun lahir dari sana.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="shop.html">Clothing Store</a></li>
+                            <li><a href="shop.html">Trending Shoes</a></li>
+                            <li><a href="shop.html">Accessories</a></li>
+                            <li><a href="shop.html">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="contact.html">Kontak Kami</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Dapatkan info terlebih dahulu seputar koleksi baru, look book, obral, dan promo seru!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>2025
+                            Seluruh hak cipta dilindungi | Dibuat dengan ❤️ untuk pelanggan setia kami
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

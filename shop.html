@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ravel Collections | Belanja</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+function showAlert() {
+    Swal.fire({
+        title: 'Berhasil!',
+        text: 'Produk Ditambah ke Keranjang.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+}
+</script>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" style="width: 100px;" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Beranda</a></li>
+                            <li class="active"><a href="./shop.html">Belanja</a></li> <!-- Active pindah ke sini -->
+                            <li><a href="#">Halaman</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.html">Tentang Kami</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Kontak</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                        <a href="shopping-cart.html"><i class="fa-solid fa-cart-flatbed" style="color: rgb(1, 0, 0);"></i></a>
+                        <a href="checkout.html"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                        <div class="price">Rp 0,00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Belanja</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Beranda</a>
+                            <span>Belanja</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shop__sidebar">
+                        <div class="shop__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            </form>
+                        </div>
+                        <div class="shop__sidebar__accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseOne">Categories</a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__categories">
+                                                <ul class="nice-scroll">
+                                                    <li><a href="#">Men (6)</a></li>
+                                                    <li><a href="#">Women (8)</a></li>
+                                                    <li><a href="#">Bags (3)</a></li>
+                                                    <li><a href="#">Clothing (4)</a></li>
+                                                    <li><a href="#">Shoes (3)</a></li>
+                                                    <li><a href="#">Accessories (4)</a></li>
+                                                    <li><a href="#">Kids (0)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">Branding</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__brand">
+                                                <ul>
+                                                    <li><a href="#">Elie Saab</a></li>
+                                                    <li><a href="#">Nokha</a></li>
+                                                    <li><a href="#">Vara</a></li>
+                                                    <li><a href="#">Aldo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__price">
+                                                <ul>
+                                                    <li><a href="#">Rp0 - Rp150.000</a></li>
+                                                    <li><a href="#">Rp150.000 - Rp200.000</a></li>
+                                                    <li><a href="#">Rp200.000 - Rp250.000</a></li>
+                                                    <li><a href="#">Rp300.000 - Rp350.000</a></li>
+                                                    <li><a href="#">Rp350.000 - Rp400.000</a></li>
+                                                    <li><a href="#">Rp400.000+</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__size">
+                                                <label for="xs">xs
+                                                    <input type="radio" id="xs">
+                                                </label>
+                                                <label for="sm">s
+                                                    <input type="radio" id="sm">
+                                                </label>
+                                                <label for="md">m
+                                                    <input type="radio" id="md">
+                                                </label>
+                                                <label for="xl">xl
+                                                    <input type="radio" id="xl">
+                                                </label>
+                                                <label for="2xl">2xl
+                                                    <input type="radio" id="2xl">
+                                                </label>
+                                                <label for="xxl">xxl
+                                                    <input type="radio" id="xxl">
+                                                </label>
+                                                <label for="3xl">3xl
+                                                    <input type="radio" id="3xl">
+                                                </label>
+                                                <label for="4xl">4xl
+                                                    <input type="radio" id="4xl">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="collapseFive" class="collapse show" data-parent="#accordionExample">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseSix">Tags</a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__tags">
+                                                <a href="#">Product</a>
+                                                <a href="#">Bags</a>
+                                                <a href="#">Shoes</a>
+                                                <a href="#">Fashion</a>
+                                                <a href="#">Clothing</a>
+                                                <a href="#">Hats</a>
+                                                <a href="#">Accessories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop__product__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__left">
+                                    <p>Menampilkan 1–12 dari 13 hasil</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__right">
+                                    <p>Urut berdasarkan Harga:</p>
+                                    <select>
+                                        <option value="">Rendah ke Tinggi</option>
+                                        <option value="">Rp0 - Rp550.000</option>
+                                        <option value="">Rp550.000 - Rp1.000.000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jacket Varsity Madass</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 755.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                                    <span class="label">Sale</span>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nokha Sepatu Sneakers Manna 2.0 Harbour Wanita</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 389.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Elie Saab Caped Cady Jumpsuit</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                    </div>
+                                    <h5>Rp 2.999.999</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                                    <span class="label">Sale</span>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Syal motif kotak-kotak</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 299.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Tas Bahu Gembung (Water-Repellent)</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 399.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Diamond Ladies Necklace</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 18.547.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>T-shirt Motif Spray Hitam</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 249.900</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
+                                    <span class="label">Sale</span>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Vibrant Leather EDP Set 100 ML</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 759.900</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-11.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Jujube Signature Classic Backpack x Witney Carson-Cloud</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                    </div>
+                                    <h5>Rp 2.370.250</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
+                                    <span class="label">Sale</span>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Russian Digital Spectre SKVO CAMO Unisex Zip Hoodie</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 1.126.706</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-13.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Aldo Biliwin Men's Laptop Bag</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 1.699.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-14.jpg">
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Nada Gold - Kancing Manset</h6>
+                                    <a href="#" class="add-cart" onclick="showAlert()">+ Tambah ke Keranjang</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star" style="color: coral;"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <h5>Rp 202.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/footer-logo.png" style="width: 90px;" alt=""></a>
+                        </div>
+                        <p>Pelanggan adalah jantung dari model bisnis kami yang unik, di mana desain pun lahir dari sana.</p>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="shop.html">Clothing Store</a></li>
+                            <li><a href="shop.html">Trending Shoes</a></li>
+                            <li><a href="shop.html">Accessories</a></li>
+                            <li><a href="shop.html">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="contact.html">Kontak Kami</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Dapatkan info terlebih dahulu seputar koleksi baru, look book, obral, dan promo seru!</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>2025
+                            Seluruh hak cipta dilindungi | Dibuat dengan ❤️ untuk pelanggan setia kami
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
